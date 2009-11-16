@@ -1,3 +1,20 @@
+python-augeas (0.2.0-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * debian/control
+    - added libaugeas0 to Depends; thanks to Guido Günther for the report and to
+      Daniel Leidert for the patch; Closes: #504511
+  * Prepare for the upcoming Python 2.6 transition; thanks to Scott Kitterman
+    for the report; Closes: #552491
+    - debian/control
+      + Build-depends on 'python (>= 2.5)' instead of python-dev (it's arch:all)
+      + Depends on '${python:Depends}' instead of 'python (>= 2.5)'
+      + drop 'python-ctypes' from Depends: it's py2.4 only (this pkg >= 2.5)
+    - debian/pyversions
+      + allows Python from 2.5 onward
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 16 Nov 2009 20:52:11 +0100
+
 python-augeas (0.2.0-1) unstable; urgency=low
 
   * Initial release (Closes: #496830)

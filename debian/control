@@ -2,13 +2,13 @@ Source: python-augeas
 Section: python
 Priority: optional
 Maintainer: Free Ekanayaka <freee@debian.org>
-Build-Depends: cdbs, debhelper (>= 6), python-support, python-dev
+Build-Depends: cdbs, debhelper (>= 6), python-support, python (>= 2.5)
 Standards-Version: 3.8.0
 Homepage: http://augeas.net/
 
 Package: python-augeas
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, python (>= 2.5), python-ctypes
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, libaugeas0
 Description: Python bindings for Augeas
  Augeas is a library and command line tool that focuses
  on the most basic problem in handling Linux configurations
