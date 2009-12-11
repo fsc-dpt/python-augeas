@@ -1,37 +1,51 @@
-This package was debianized by Free Ekanayaka <freee@debian.org> on
-Tue, 19 Aug 2008 10:37:52 +0200.
+Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=59
+Name: python-augeas
+Maintainer:
+ Nathaniel McCallum <nathaniel@natemccallum.com>
+ Jeff Schroeder <jeffschroeder@computer.org>
+ Harald Hoyer <harald@redhat.com>
+Source: http://augeas.net/download/python/
 
-It was downloaded from http://augeas.net/download.html
-
-Upstream Authors:
-
-    Nathaniel McCallum <nathaniel@natemccallum.com>
-    Jeff Schroeder <jeffschroeder@computer.org>
-    Harald Hoyer <harald@redhat.com>
-
+Files: *
 Copyright:
+ 2008, Nathaniel McCallum <nathaniel@natemccallum.com>
+ 2008, Jeff Schroeder <jeffschroeder@computer.org>
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-    Copyright (C) 2008 Nathaniel McCallum
-    Copyright (C) 2008 Jeff Schroeder
+X-Comment: On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in `/usr/share/common-licenses/LGPL-2.1'.
 
-License:
+Files: debian/*
+Copyright:
+ 2009, Alessio Treglia <quadrispro@ubuntu.com>
+ 2008, Free Ekanayaka <freee@debian.org>
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-    This package is free software; you can redistribute it and/or
-    modify it under the terms of the GNU Lesser General Public
-    License as published by the Free Software Foundation; either
-    version 2 of the License, or (at your option) any later version.
-
-    This package is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-    Lesser General Public License for more details.
-
-    You should have received a copy of the GNU Lesser General Public
-    License along with this package; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-
-On Debian systems, the complete text of the GNU General
-Public License can be found in `/usr/share/common-licenses/LGPL'.
-
-The Debian packaging is (C) 2008, Free Ekanayaka <freee@debian.org> and
-is licensed under the GPL, see above.
+X-Comment: On Debian systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-2'.
