@@ -1,0 +1,3 @@
+# Site		Directory	Pattern		Version	Script
+version=3
+http://augeas.net/download/python/python-augeas-(.*)\.tar\.gz	debian	uupdate

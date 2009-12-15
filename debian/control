@@ -1,0 +1,24 @@
+Source: python-augeas
+Section: python
+Priority: optional
+Maintainer: Free Ekanayaka <freee@debian.org>
+Uploaders: Alessio Treglia <quadrispro@ubuntu.com>
+Build-Depends: debhelper (>= 7.3.7),
+ python-support,
+ python (>= 2.5)
+Standards-Version: 3.8.3
+Homepage: http://augeas.net/
+
+Package: python-augeas
+Architecture: all
+Depends: ${shlibs:Depends},
+ ${python:Depends},
+ libaugeas0,
+ ${misc:Depends}
+Description: Python bindings for Augeas
+ Augeas is a library and command line tool that focuses
+ on the most basic problem in handling Linux configurations
+ programmatically: editing actual configuration files in a
+ controlled manner.
+ .
+ This module provides a Python interface to the Augeas API.
