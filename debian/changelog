@@ -1,3 +1,18 @@
+python-augeas (0.3.0-2) unstable; urgency=low
+
+  * Add debian/gbp.conf file.
+  * Switch to format 3.0 (quilt).
+  * debian/control:
+    - Update my email address.
+    - Bump Standards.
+    - Add Vcs fields.
+    - Remove ${shlibs:Depends} macro.
+  * Use the form 'dh  --foo=bar' for compatibility with DH 8.
+  * Update debian/copyright file.
+  * Use XS-Python-Version field instead of debian/pyversions.
+
+ -- Alessio Treglia <alessio@debian.org>  Thu, 19 Aug 2010 11:31:54 +0200
+
 python-augeas (0.3.0-1) unstable; urgency=low
 
   * New upstream release.

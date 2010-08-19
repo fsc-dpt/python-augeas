@@ -1,4 +1,4 @@
-Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=59
+Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=135
 Name: python-augeas
 Maintainer:
  Nathaniel McCallum <nathaniel@natemccallum.com>
@@ -6,7 +6,6 @@ Maintainer:
  Harald Hoyer <harald@redhat.com>
 Source: http://augeas.net/download/python/
 
-Files: *
 Copyright:
  2008, Nathaniel McCallum <nathaniel@natemccallum.com>
  2008, Jeff Schroeder <jeffschroeder@computer.org>
@@ -24,13 +23,12 @@ License: LGPL-2.1+
  You should have received a copy of the GNU Lesser General Public
  License along with this library; if not, write to the Free Software
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-
 X-Comment: On Debian systems, the complete text of the GNU Lesser General
  Public License can be found in `/usr/share/common-licenses/LGPL-2.1'.
 
-Files: debian/*
+Files: ./debian/*
 Copyright:
- 2009, Alessio Treglia <quadrispro@ubuntu.com>
+ 2009-2010, Alessio Treglia <quadrispro@ubuntu.com>
  2008, Free Ekanayaka <freee@debian.org>
 License: GPL-2+
  This program is free software; you can redistribute it and/or modify
@@ -46,6 +44,5 @@ License: GPL-2+
  You should have received a copy of the GNU General Public License along
  with this program; if not, write to the Free Software Foundation, Inc.,
  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
 X-Comment: On Debian systems, the complete text of the GNU General
  Public License can be found in `/usr/share/common-licenses/GPL-2'.

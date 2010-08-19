@@ -2,17 +2,19 @@ Source: python-augeas
 Section: python
 Priority: optional
 Maintainer: Free Ekanayaka <freee@debian.org>
-Uploaders: Alessio Treglia <quadrispro@ubuntu.com>
-Build-Depends: debhelper (>= 7.3.7),
+Uploaders: Alessio Treglia <alessio@debian.org>
+Build-Depends: debhelper (>= 7.3.7~),
  python-support,
  python (>= 2.5)
-Standards-Version: 3.8.3
+Standards-Version: 3.9.1
+XS-Python-Version: >= 2.5
 Homepage: http://augeas.net/
+Vcs-Git: git://git.debian.org/collab-maint/python-augeas.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/python-augeas.git
 
 Package: python-augeas
 Architecture: all
-Depends: ${shlibs:Depends},
- ${python:Depends},
+Depends: ${python:Depends},
  libaugeas0,
  ${misc:Depends}
 Description: Python bindings for Augeas
