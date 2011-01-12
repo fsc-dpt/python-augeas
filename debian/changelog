@@ -1,3 +1,11 @@
+python-augeas (0.4.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * {Build-,}Depend on libaugeas0 >= 0.7.2.
+  * Build-depends on python-all (>= 2.6.5).
+
+ -- Alessio Treglia <alessio@debian.org>  Wed, 12 Jan 2011 14:51:41 +0100
+
 python-augeas (0.3.0-2) unstable; urgency=low
 
   * Add debian/gbp.conf file.
