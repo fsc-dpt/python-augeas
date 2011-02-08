@@ -1,3 +1,9 @@
+python-augeas (0.4.0-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Alessio Treglia <alessio@debian.org>  Wed, 09 Feb 2011 00:31:09 +0100
+
 python-augeas (0.4.0-1) experimental; urgency=low
 
   * New upstream release.
