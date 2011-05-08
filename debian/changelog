@@ -1,3 +1,10 @@
+python-augeas (0.4.0-2.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Rebuild to add Python 2.7 support
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 08 May 2011 16:45:52 +0200
+
 python-augeas (0.4.0-2) unstable; urgency=low
 
   * Upload to unstable.
