@@ -1,7 +1,14 @@
+python-augeas (0.4.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Depend on libpython2.6 and libpython2.7 (Closes: #654321)
+
+ -- Free Ekanayaka <freee@debian.org>  Mon, 01 Oct 2012 09:12:56 +0200
+
 python-augeas (0.4.0-2.1) unstable; urgency=low
 
-  * Non-maintainer upload.
-  * Rebuild to add Python 2.7 support
+   * Non-maintainer upload.
+   * Rebuild to add Python 2.7 support
 
  -- Piotr Ożarowski <piotr@debian.org>  Sun, 08 May 2011 16:45:52 +0200
 
