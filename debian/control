@@ -18,7 +18,6 @@ Package: python-augeas
 Architecture: all
 Depends:
  libaugeas0 (>= 0.7.2),
- libpython2.6 (>= 2.6),
  libpython2.7 (>= 2.7),
  ${misc:Depends},
  ${python:Depends}
