@@ -1,11 +1,12 @@
-Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=135
-Name: python-augeas
-Maintainer:
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: python-augeas
+Upstream-Contact:
  Nathaniel McCallum <nathaniel@natemccallum.com>
  Jeff Schroeder <jeffschroeder@computer.org>
  Harald Hoyer <harald@redhat.com>
-Source: http://augeas.net/download/python/
+Source: https://github.com/hercules-team/python-augeas
 
+Files: *
 Copyright:
  2008, Nathaniel McCallum <nathaniel@natemccallum.com>
  2008, Jeff Schroeder <jeffschroeder@computer.org>

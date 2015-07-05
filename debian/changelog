@@ -1,3 +1,15 @@
+python-augeas (0.5.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Enable Python3 build, switch to Pybuild (Closes: #777544)
+  * Switch to Debhelper 9
+  * Replace broken link with GitHub repo
+  * Bump Standards-Version to 3.9.6
+  * Set Vcs-Git and Vcs-Browser to canonical value
+  * Update copyright file format
+
+ -- Federico Ceratto <federico@debian.org>  Sun, 05 Jul 2015 11:50:07 +0100
+
 python-augeas (0.4.1-2) unstable; urgency=low
 
   * collab-maint team upload.

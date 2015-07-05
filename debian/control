@@ -3,20 +3,22 @@ Section: python
 Priority: optional
 Maintainer: Free Ekanayaka <freee@debian.org>
 Build-Depends:
- debhelper (>= 7.3.7~),
+ debhelper (>= 9~),
+ dh-python,
  libaugeas0 (>= 0.7.2),
- python-all (>= 2.6.5)
-Standards-Version: 3.9.3
+ python-all (>= 2.6.5),
+ python3-all
+Standards-Version: 3.9.6
 X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.3
 Homepage: http://augeas.net/
-Vcs-Git: git://git.debian.org/collab-maint/python-augeas.git
-Vcs-Browser: http://git.debian.org/?p=collab-maint/python-augeas.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/python-augeas.git
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/python-augeas.git
 
 Package: python-augeas
 Architecture: all
 Depends:
  libaugeas0 (>= 0.7.2),
- libpython2.7 (>= 2.7),
  ${misc:Depends},
  ${python:Depends}
 Description: Python bindings for Augeas
@@ -26,3 +28,17 @@ Description: Python bindings for Augeas
  controlled manner.
  .
  This module provides a Python interface to the Augeas API.
+
+Package: python3-augeas
+Architecture: all
+Depends:
+ libaugeas0 (>= 0.7.2),
+ ${misc:Depends},
+ ${python3:Depends}
+Description: Python3 bindings for Augeas
+ Augeas is a library and command line tool that focuses
+ on the most basic problem in handling Linux configurations
+ programmatically: editing actual configuration files in a
+ controlled manner.
+ .
+ This module provides a Python3 interface to the Augeas API.
