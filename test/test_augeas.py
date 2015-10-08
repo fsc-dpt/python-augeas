@@ -6,7 +6,7 @@ __mydir = os.path.dirname(sys.argv[0])
 if not os.path.isdir(__mydir):
     __mydir = os.getcwd()
 
-sys.path.append(__mydir + "/..")
+sys.path.insert(0, __mydir + "/..")
 
 import augeas
 
@@ -49,12 +49,14 @@ class TestAugeas(unittest.TestCase):
 
     def test03PrintAll(self):
         "print all tree elements"
+        output = open("test03PrintAll.out", "w")
         a = augeas.Augeas(root=MYROOT)
         path = "/"
         matches = recurmatch(a, path)
         for (p, attr) in matches:
-            print >> sys.stderr, p, attr
+            print >> output, p, attr
             self.failUnless(p != None and attr != None)
+        output.close()
 
     def test04Grub(self):
         "test default setting of grub entry"
@@ -99,6 +101,46 @@ class TestAugeas(unittest.TestCase):
         a.setm("/files/etc/hosts", "*/ipaddr", "192.168.1.1")
         for i in matches:
             self.failUnless(a.get(i) == "192.168.1.1")
+        del a
+
+    def test08Span(self):
+        "test span"
+        data = [ {"expr": "/files/etc/hosts/1/ipaddr", "f": "hosts",
+                  "ls": 0, "le": 0, "vs": 104, "ve": 113, "ss": 104, "se": 113},
+                 {"expr": "/files/etc/hosts/1", "f": "hosts",
+                  "ls": 0, "le": 0, "vs": 0, "ve": 0, "ss": 104, "se": 155},
+                 {"expr": "/files/etc/hosts/*[last()]", "f": "hosts",
+                  "ls": 0, "le": 0, "vs": 0, "ve": 0, "ss": 155, "se": 202},
+                 {"expr": "/files/etc/hosts/#comment[2]", "f": "hosts",
+                  "ls": 0, "le": 0, "vs": 58, "ve": 103, "ss": 56, "se": 104},
+                 {"expr": "/files/etc/hosts", "f": "hosts",
+                  "ls": 0, "le": 0, "vs": 0, "ve": 0, "ss": 0, "se":202 },
+                ]
+        a = augeas.Augeas(root=MYROOT, flags=augeas.Augeas.ENABLE_SPAN)
+        for d in data:
+            r = a.span(d["expr"])
+            self.assertEquals(os.path.basename(r[0]), d["f"])
+            self.assertEquals(r[1], d["ls"])
+            self.assertEquals(r[2], d["le"])
+            self.assertEquals(r[3], d["vs"])
+            self.assertEquals(r[4], d["ve"])
+            self.assertEquals(r[5], d["ss"])
+            self.assertEquals(r[6], d["se"])
+
+        error = None
+        try:
+            r = a.span("/files")
+        except ValueError, e:
+            error = e
+        self.assertTrue(isinstance(e, ValueError))
+
+        error = None
+        try:
+            r = a.span("/random")
+        except ValueError, e:
+            error = e
+        self.assertTrue(isinstance(e, ValueError))
+
         del a
 
 def getsuite():
