@@ -2,7 +2,7 @@
 %{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 
 Name:		python-augeas
-Version:	0.2.0
+Version:	0.3.0
 Release:	1%{?dist}
 Summary:	Python bindings to augeas
 Group:		Development/Languages
@@ -13,7 +13,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires:	augeas-libs 
 BuildArch:	noarch
 
-BuildRequires:	python-setuptools 
+BuildRequires:	python-setuptools python-devel
 
 %description
 python-augeas is a set of Python bindings around augeas.
@@ -42,6 +42,9 @@ rm -rf $RPM_BUILD_ROOT
 %{python_sitelib}/*augeas*.egg-info
 
 %changelog
+* Thu Jul 03 2008 Harald Hoyer <harald@redhat.com> 0.2.1-1
+- version 0.2.1
+
 * Wed Jun 11 2008 Harald Hoyer <harald@redhat.com> 0.2.0-1
 - switched to noarch, dlopen/ python bindings
 
