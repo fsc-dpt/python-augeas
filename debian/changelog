@@ -1,72 +1,8 @@
-python-augeas (0.5.0-1) unstable; urgency=low
+python-augeas (0.3.0-2) UNRELEASED; urgency=low
 
-  * New upstream release
-  * Enable Python3 build, switch to Pybuild (Closes: #777544)
-  * Switch to Debhelper 9
-  * Replace broken link with GitHub repo
-  * Bump Standards-Version to 3.9.6
-  * Set Vcs-Git and Vcs-Browser to canonical value
-  * Update copyright file format
+  * Use canonical URIs for Vcs-* fields.
 
- -- Federico Ceratto <federico@debian.org>  Sun, 05 Jul 2015 11:50:07 +0100
-
-python-augeas (0.4.1-2) unstable; urgency=low
-
-  * collab-maint team upload.
-  * ACK NMU, thanks to Luca Falavigna for the good work. (Closes: #707895)
-  * Drop myself from the Uploaders field.
-
- -- Alessio Treglia <alessio@debian.org>  Wed, 16 Oct 2013 16:27:37 +0100
-
-python-augeas (0.4.1-1.1) unstable; urgency=low
-
-  * Non-maintainer upload.
-  * Drop dependency on libpython2.6 (Closes: #707895).
-
- -- Luca Falavigna <dktrkranz@debian.org>  Sun, 12 May 2013 16:44:37 +0200
-
-python-augeas (0.4.1-1) unstable; urgency=low
-
-  * New upstream release
-  * Depend on libpython2.6 and libpython2.7 (Closes: #654321)
-
- -- Free Ekanayaka <freee@debian.org>  Mon, 01 Oct 2012 09:12:56 +0200
-
-python-augeas (0.4.0-2.1) unstable; urgency=low
-
-   * Non-maintainer upload.
-   * Rebuild to add Python 2.7 support
-
- -- Piotr Ożarowski <piotr@debian.org>  Sun, 08 May 2011 16:45:52 +0200
-
-python-augeas (0.4.0-2) unstable; urgency=low
-
-  * Upload to unstable.
-
- -- Alessio Treglia <alessio@debian.org>  Wed, 09 Feb 2011 00:31:09 +0100
-
-python-augeas (0.4.0-1) experimental; urgency=low
-
-  * New upstream release.
-  * {Build-,}Depend on libaugeas0 >= 0.7.2.
-  * Build-depends on python-all (>= 2.6.5).
-
- -- Alessio Treglia <alessio@debian.org>  Wed, 12 Jan 2011 14:51:41 +0100
-
-python-augeas (0.3.0-2) unstable; urgency=low
-
-  * Add debian/gbp.conf file.
-  * Switch to format 3.0 (quilt).
-  * debian/control:
-    - Update my email address.
-    - Bump Standards.
-    - Add Vcs fields.
-    - Remove ${shlibs:Depends} macro.
-  * Use the form 'dh  --foo=bar' for compatibility with DH 8.
-  * Update debian/copyright file.
-  * Use XS-Python-Version field instead of debian/pyversions.
-
- -- Alessio Treglia <alessio@debian.org>  Thu, 19 Aug 2010 11:31:54 +0200
+ -- Jakub Wilk <jwilk@debian.org>  Sun, 05 May 2013 16:02:07 +0200
 
 python-augeas (0.3.0-1) unstable; urgency=low
 

@@ -1,9 +1,4 @@
 #!/usr/bin/make -f
 
-export DH_VERBOSE=1
-export PYBUILD_NAME=augeas
-export PYBUILD_DESTDIR_python2=debian/python-augeas/
-export PYBUILD_DESTDIR_python3=debian/python3-augeas/
-
 %:
-	dh $@ --buildsystem=pybuild --with python2,python3
+	dh --buildsystem=python_distutils $@
