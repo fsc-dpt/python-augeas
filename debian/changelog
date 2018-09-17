@@ -42,4 +42,3 @@ python-augeas (0.2.0-1) unstable; urgency=low
   * Initial release (Closes: #496830)
 
  -- Free Ekanayaka <freee@debian.org>  Tue, 19 Aug 2008 10:37:52 +0200
-
