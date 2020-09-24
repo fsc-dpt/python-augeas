@@ -7,6 +7,8 @@ python-augeas (0.3.0-2) UNRELEASED; urgency=low
   * Fixed VCS URL (https)
   * d/control: Set Vcs-* to salsa.debian.org
   * Convert git repository from git-dpm to gbp layout
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
 
  -- Jakub Wilk <jwilk@debian.org>  Sun, 05 May 2013 16:02:07 +0200
 
